@@ -39,6 +39,7 @@ RUN apt-get update                                  && \
     npm install -g azure-cli                        && \
     pip install -U setuptools                       && \
     pip install --upgrade pip                       && \
+    pip install --upgrade ansible                   && \
     pip install azure==2.0.0rc5                     && \
     rm -rf /var/lib/apt/lists/*
  
