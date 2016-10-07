@@ -1,0 +1,4 @@
+# don't send temporary files
+    */temp*
+    */*/temp*
+    temp?
