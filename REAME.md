@@ -10,5 +10,5 @@ With this image you will be able to manage and deploy Microsoft Resources on Azu
 you can use use ssh keys, azure credentials by mounting local volume to the container.
 eg :
 ```bash
-docker run -v /Users/hleclerc/projects/azure/azure-plybooks:/azure -v /Users/hleclerc/.azure:/root/.azure -v /Users/hleclerc/.ssh:/root/.ssh --name azure-commander -ti herveleclerc/azure-commander bash
+docker run -v /Users/hleclerc/projects/azure/azure-playbooks:/azure -v /Users/hleclerc/.azure:/root/.azure -v /Users/hleclerc/.ssh:/root/.ssh --name azure-commander -ti herveleclerc/azure-commander bash
 ```
