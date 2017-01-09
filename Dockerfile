@@ -4,9 +4,9 @@ MAINTAINER <herve leclerc> herve.leclerc@alterway.fr
 # This image install azure-cli, ansible, and powershell to drive efficiently azure 
 # 
 
-ARG POWERSHELL_RELEASE=v6.0.0-alpha.10
-ARG POWERSHELL_PACKAGE=powershell_6.0.0-alpha.10-1ubuntu1.16.04.1_amd64.deb
-ARG POWERSHELL_HOME="/opt/microsoft/powershell/6.0.0-alpha.10"
+ARG POWERSHELL_RELEASE=v6.0.0-alpha.14
+ARG POWERSHELL_PACKAGE=powershell_6.0.0-alpha.14-1ubuntu1.16.04.1_amd64.deb
+ARG POWERSHELL_HOME="/opt/microsoft/powershell/6.0.0-alpha.14"
 
 RUN apt-get update                                  && \
     apt-get install -y software-properties-common   && \
@@ -52,6 +52,4 @@ RUN curl -SLO https://github.com/PowerShell/PowerShell/releases/download/$POWERS
 ENV PSHOME "$POWERSHELL_HOME"
 
 RUN powershell Install-Package -Force -Name AzureRM.NetCore.Preview -Source https://www.powershellgallery.com/api/v2 -ProviderName NuGet -ExcludeVersion -Destination $POWERSHELL_HOME/Modules
-
-
 
