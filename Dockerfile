@@ -1,6 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER <herve leclerc> herve.leclerc@alterway.fr
 #
+#
 # This image install azure-cli, ansible, and powershell to drive efficiently azure 
 # 
 
