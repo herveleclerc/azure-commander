@@ -53,3 +53,4 @@ ENV PSHOME "$POWERSHELL_HOME"
 
 RUN powershell Install-Package -Force -Name AzureRM.NetCore.Preview -Source https://www.powershellgallery.com/api/v2 -ProviderName NuGet -ExcludeVersion -Destination $POWERSHELL_HOME/Modules
 
+RUN echo "hello"
