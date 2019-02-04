@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER <herve leclerc> herve.leclerc@alterway.fr
 #
 # This image install azure-cli, ansible, and powershell to drive efficiently azure 
-# 
+#  Un commentaire pour demo
 
 ARG POWERSHELL_RELEASE=v6.0.0-alpha.14
 ARG POWERSHELL_PACKAGE=powershell_6.0.0-alpha.14-1ubuntu1.16.04.1_amd64.deb
