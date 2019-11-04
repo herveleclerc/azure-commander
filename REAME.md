@@ -12,3 +12,4 @@ eg :
 ```bash
 docker run -v /Users/hleclerc/projects/azure/azure-playbooks:/azure -v /Users/hleclerc/.azure:/root/.azure -v /Users/hleclerc/.ssh:/root/.ssh --name azure-commander -ti herveleclerc/azure-commander bash
 ```
+####
